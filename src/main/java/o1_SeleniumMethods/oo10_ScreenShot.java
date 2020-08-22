@@ -3,6 +3,7 @@ package o1_SeleniumMethods;
 import java.io.File;
 import java.io.IOException;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +19,7 @@ public class oo10_ScreenShot {
 		WebDriver driver = new FirefoxDriver();
 		
 		driver.manage().window().maximize(); 		// ScreenShot'i almak icin maximize etmek lazim. 
-		driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();			
 		
 		driver.get("https://www.google.com");
 
@@ -45,5 +46,13 @@ public class oo10_ScreenShot {
 	
 	- This code is very simple one. We are going to learn advance level. In this consept we take a screenshot and on the file we can see it. 
 	  Later we take another one, first one is deleted. We will learn how we keep the multiple screenshots according to date and time.  
+
+	- TO ADD COOKIE :
+	
+		Cookie cookie1 = new Cookie("test2", "cookies2");
+		 driver.manage().addCookie(cookie1);
+
+
+
 
 */

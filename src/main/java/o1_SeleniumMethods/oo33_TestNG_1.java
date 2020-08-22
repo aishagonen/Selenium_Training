@@ -26,7 +26,7 @@ public class oo33_TestNG_1 {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies(); 		
 		driver.get("https://app.hubspot.com/login");
 		Thread.sleep(5000);
 	}

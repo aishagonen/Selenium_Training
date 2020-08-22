@@ -16,7 +16,7 @@ public class JavaScriptUtil {
 		String bgcolor = element.getCssValue("backgroundColor");
 		for (int i = 0; i < 20; i++) {									// 'i<20' means 20 kere yanip soner. you can change it. 
 			changeColor("rgb(0,200,0)", element, driver);				// 'rgb(0,200,0)' is color code. you can change it.
-			changeColor(bgcolor, element, driver);// 
+			changeColor(bgcolor, element, driver);
 		}
 	}
 	

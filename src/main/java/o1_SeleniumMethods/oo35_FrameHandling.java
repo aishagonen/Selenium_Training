@@ -1,5 +1,6 @@
 package o1_SeleniumMethods;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,10 +13,9 @@ public class oo35_FrameHandling {
 	public static void main(String[] args) {
 		
 		url = "http://londonfreelance.org/courses/frames/index.html";
-		
 		driver = ElementUtil.launchBrowser(driver, "chrome");
 		ElementUtil.launchURL(driver, url);
-		
+
 		driver.switchTo().frame(driver.findElement(By.name("main")));
 		
 		System.out.println(driver.getTitle());

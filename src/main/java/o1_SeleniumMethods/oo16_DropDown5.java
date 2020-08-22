@@ -34,7 +34,7 @@ public class oo16_DropDown5 {
 		
 		
 // Print all values for day option: 		
-		List<WebElement> dayOptions = select.getOptions();
+		List<WebElement> dayOptions = select.getOptions();	// stores all available options as a list.
 		
 		System.out.println(dayOptions.size()); 				// to see how many available options list has. 
 		

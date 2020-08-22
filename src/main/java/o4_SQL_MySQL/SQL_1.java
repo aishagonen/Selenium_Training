@@ -93,6 +93,31 @@ public class SQL_1 {
 	
 	
 	
+	create -- table, database
+use databaseName -- select the database that we want to work with
+insert -- to add elements inside my table
+insert into tableName values(.....);
+select * from tableName; -- select all the values from your table
+show databases, tables; shows the amount of databases and tables
+describe tableName; shows all the features of your table
+select fieldName(columnName) from tableName; select specific columns from the table
+distinct -- selects unique values from the table.
+select distinct columName from tableName;
+where clause -- this clause is to add condition to your query
+select * from TableName where fieldName = ‘value’;
+like clause -- this is used in a where clause to search for a specified pattern in a fieldname
+    % this sign represents zero, one, two or multiple characters
+    _ represents single character
+select names from salesmen with cities starting with p
+select salesmen_id + 10, name from salesmen;
+delete -- delete from Employee1 where EmployeeId = 3;
+update
+inner join -- selects values that are matching in both tables
+left join -- selecting all values from the left table and matching values. If there is no match from the right side it will return null.
+right join -- selecting all values from the right table and matching values.
+	
+	
+	
 	
 	
 	
